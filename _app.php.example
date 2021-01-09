@@ -1,0 +1,6 @@
+<?php
+
+return [
+    'version' => env('APP_VERSION', '0.0.1'),
+    'version_hash' => env('APP_VERSION_HASH', '0000000'),
+];
