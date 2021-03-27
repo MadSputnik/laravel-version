@@ -9,10 +9,10 @@ Laravel-Version is a small Bash utility to easily add a [Semver](https://semver.
 3. Make it executable: `chmod +x version.sh`
 4. Create a `config/_app.php` configuration file (see [`_app.php.example`](_app.php.example))
 5. If you have Bugsnag installed, ensure that
-<ol type="a">
-	<li>You published the Bugsnag config file (`php artisan vendor:publish`)</li>
-	<li>`APP_VERSION` in `config/bugsnag.php` has a default value, i.e. `env('BUGSNAG_APP_VERSION', '0.0.1')`</li>
-</ol>
+	<ol type="a">
+		<li>You published the Bugsnag config file (`php artisan vendor:publish`)</li>
+		<li>`APP_VERSION` in `config/bugsnag.php` has a default value, i.e. `env('BUGSNAG_APP_VERSION', '0.0.1')`</li>
+	</ol>
 6. Make some changes to your project
 7. Ensure you are on your release branch
 8. Run `./version.sh 1.0.0` to update the config files. This will amend the last commit with the updated config files and tag the project with version `1.0.0`.
